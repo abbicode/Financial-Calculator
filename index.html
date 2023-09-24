@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  
+
+<!--  background and title -->
+  <div class="background">
+
+  <div class='title'>
+    <h1>FINANCIAL<br>TRACKER</h1>
+  </div>  
+ </div>
+<div class='parent'>
+  <!-- <div class='parent'> -->
+    <div class='row1' class='child'>
+     <label  class='label'>Name</label>
+     <input type='text' name='name' class='text' id='nameInput' >
+    </div>
+    <div class='row2' class='child'>
+      <label  class='label'>Amount</label>
+      <input type='number' name='amount' class='text' id='amountInput'>
+    <!-- </div> -->
+  </div>
+  <select id='drop' onchange="selectFunction(this.value);">
+    <option value='select'>Select</option>
+    <option value='needs'>Needs</option>
+    <option value='wants'>Wants</option>
+    <option value='savings'>Savings</option>
+  </select>
+  <button id='enterbtn' onclick="appChange()">Enter</button>
+</div>
+
+    
+<table id='table' class='parent1'>
+  <tr class='child1'>
+    <th>Name:</th>
+    <th>Amount: </th>
+    <th>Type: </th>
+    <!-- <th>Delete:</th> -->
+  </tr>
+</table>
+
+  
+
+<div class='parent2'>
+  <canvas class='child' id="myChart2" style="max-width:400px; max-height: 400px"></canvas>
+  <canvas class='child' id="myChart" style="max-width:400px; max-height: 400px"></canvas>
+  
+  <canvas class='child' id="myChart3" style="max-width:400px; max-height: 400px"></canvas>
+</div>
+  <!-- <canvas id="myChart4" style="max-width:400px; max-height: 400px"></canvas> -->
+
+  <h2 id='totallabel'>Total spent: </h2>
+<div class='parent2'>
+  <div class='child2'>
+    <h3 id='needslabel'>Needs spent: </h3>
+    <h3 id='wantslabel'>Wants spent: </h3>
+    
+    <h3 id='savingslabel'>Savings spent</h3>
+  </div>
+
+  <div class='child2'>
+    <!-- <h3 id='totallabelper'>Total spent: </h3> -->
+    <h3 id='needslabelper'>Needs: </h3>
+    <h3 id='wantslabelper'>Wants: </h3>
+    
+    
+    <h3 id='savingslabelper'>Savings</h3>
+  </div>
+</div>
+
+
+<div class="paragraph" id='About'>
+  <h2 class="about-title">50/30/20 Rule</h2>
+  <p>The 50/30/20 rule is a common budget rule to help individuals manage their spendings. It states that an individual should spend 50% of one's salary on needs, 30% on wants, and 20% on savings. For example, needs would include food, housing, transportation, etc. Wants would include things that aren't necessary such as travel expenses, shopping, entertainment, etc. Lastly, savings would include retirement plan, emergency funds, debt repayment, etc. This rule is just a base budgeting method for some people, however, depending on your income, you may need to adjust the percentages. For some, 50% may not be enough of the paycheck to cover needs. Additionally, one may have a lot of debt to pay off, so they would need to adjust the last percentage to something higher. Some argue that 70/20/10/ budget might be more attainable for the average American Citizen. </p>
+
+</div>
+  
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"></script>
+ <script src="script.js"></script> 
+<script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>  
+</body>
+
+</html>
+
